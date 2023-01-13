@@ -1,5 +1,5 @@
-const displayName = (req, res, next) => {
-    res.json('This function will display the name of someone who you know');
+const myGreatGrandfather = (req, res, next) => {
+    res.json('Katsusuke Nishigaki');
 };
 
 const myGrandfather = (req, res, next) => {
@@ -10,4 +10,4 @@ const myGrandmother = (req, res, next) => {
     res.json('Kumiko Nishigaki');
 };
 
-module.exports = { displayName, myGrandmother, myGrandfather };
+module.exports = { myGreatGrandfather, myGrandmother, myGrandfather };
