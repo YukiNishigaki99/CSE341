@@ -5,6 +5,3 @@ GET http://localhost:3000/myGrandfather HTTP/1.1
 
 ###
 GET http://localhost:3000/myGrandmother HTTP/1.1
-
-###
-https://cse341-nishigaki.onrender.com HTTP/1.1
