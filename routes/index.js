@@ -1,8 +1,6 @@
-const routes = require('express').Router();
-const lesson1Controller = require('../controllers/lesson1');
+const express = require('express');
+const router = express.Router();
 
-routes.get('/', lesson1Controller.yukiRoute);
-routes.get('/fumio', lesson1Controller.fumioRoute);
-routes.get('/kumiko', lesson1Controller.kumikoRoute);
+router.use('/contacts', require('./contacts'))
 
-module.exports = routes;
+module.exports = router;
