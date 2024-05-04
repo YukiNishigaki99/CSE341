@@ -1,0 +1,23 @@
+{
+    "contact": {
+        "firstName": "Konoka",
+        "lastName": "Kimura",
+        "email": "KonokaKimura@email.com",
+        "favoriteColor": "Red",
+        "birthday": "May 11"
+    },
+    "contact2": {
+        "firstName": "Itsuki",
+        "lastName": "Kubo",
+        "email": "ItsukiKubo@email.com",
+        "favoriteColor": "Blue",
+        "birthday": "July 24"
+    },
+    "contact3": {
+        "firstName": "Mayuru",
+        "lastName": "Odani",
+        "email": "MayuruOdani@email.com",
+        "favoriteColor": "Yellow",
+        "birthday": "February 1"
+    }
+}
