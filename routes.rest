@@ -61,15 +61,15 @@ content-type: application/json
     "birthday": "December 31"
 }
 ### PUT contact
-PUT http://cse341-week3.onrender.com/contacts/6635dc05f272633544532b43 HTTP/1.1
+PUT http://cse341-week3.onrender.com/contacts/663f3d0d253a1b638c24ec87 HTTP/1.1
 content-type:application/json
 
 {
-    "firstName": "Mayuru",
-    "lastName": "Odani",
-    "email": "mayuruodani@email.com",
-    "favoriteColor": "Yellow",
-    "birthday": "February 1"
+    "firstName": "Ruri",
+    "lastName": "Tosaki",
+    "email": "ruritosaki@email.com",
+    "favoriteColor": "White",
+    "birthday": "February 2"
 }
 ### DELETE contact
-DELETE http://cse341-week3.onrender.com/contacts/663f3ad09b5e58835ed22d6a
+DELETE http://cse341-week3.onrender.com/contacts/663f3d0d253a1b638c24ec87

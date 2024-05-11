@@ -1,23 +1,37 @@
 {
     "contact": {
-        "firstName": "Konoka",
-        "lastName": "Kimura",
-        "email": "KonokaKimura@email.com",
-        "favoriteColor": "Red",
-        "birthday": "May 11"
+        "firstName": "Snow",
+        "lastName": "White",
+        "email": "snowwhite@email.com",
+        "favoriteColor": "White",
+        "birthday": "March 6"
     },
     "contact2": {
-        "firstName": "Itsuki",
-        "lastName": "Kubo",
-        "email": "ItsukiKubo@email.com",
-        "favoriteColor": "Blue",
-        "birthday": "July 24"
+        "firstName": "Mary Beth Ella Gertrude",
+        "lastName": "Tremein",
+        "email": "cinderella@email.com",
+        "favoriteColor": "Sky Blue",
+        "birthday": "September 6"
     },
     "contact3": {
-        "firstName": "Mayuru",
-        "lastName": "Odani",
-        "email": "MayuruOdani@email.com",
-        "favoriteColor": "Yellow",
-        "birthday": "February 1"
+        "firstName": "Ariel",
+        "lastName": "Tritogeneia",
+        "email": "ariel@email.com",
+        "favoriteColor": "Light Sea Green",
+        "birthday": "October 6"
+    },
+    "contact4": {
+        "firstName": "Rapunzel",
+        "lastName": "De Corona",
+        "email": "rapunzel@email.com",
+        "favoriteColor": "Purple",
+        "birthday": "December 16"
+    },
+    "contact5": {
+        "firstName": "Elsa",
+        "lastName": "Arendelle",
+        "email": "elsa@email.com",
+        "favoriteColor": "Silver",
+        "birthday": "December 21"
     }
 }
