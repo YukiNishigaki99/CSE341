@@ -54,22 +54,22 @@ POST http://cse341-week3.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
-        "firstName": "Elsa",
-        "lastName": "Arendelle",
-        "email": "elsa@email.com",
-        "favoriteColor": "Silver",
-        "birthday": "December 21"
+    "firstName": "Someone",
+    "lastName": "Someone",
+    "email": "someone@email.com",
+    "favoriteColor": "none",
+    "birthday": "December 31"
 }
 ### PUT contact
 PUT http://cse341-week3.onrender.com/contacts/663f3d0d253a1b638c24ec87 HTTP/1.1
 content-type:application/json
 
 {
-    "firstName": "Ruri",
-    "lastName": "Tosaki",
-    "email": "ruritosaki@email.com",
-    "favoriteColor": "White",
-    "birthday": "February 2"
+    "firstName": "Elsa",
+    "lastName": "Arendelle",
+    "email": "elsa@email.com",
+    "favoriteColor": "Silver",
+    "birthday": "December 21"
 }
 ### DELETE contact
 DELETE http://cse341-week3.onrender.com/contacts/663f39cd9b5e58835ed22d69
