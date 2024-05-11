@@ -13,6 +13,9 @@ app
         next();
     })
     .use('/', require('./routes'));
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
 
 mongodb.initDb((err, mongodb) => {
     if (err) {
