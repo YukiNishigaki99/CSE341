@@ -5,7 +5,7 @@
         "description": "Description",
         "version": "1.0.0"
     },
-    "host": ["localhost:8080", "https://cse341-week3.onrender.com"],
+    "host": ["localhost:8080", "https://cse341-week4-s977.onrender.com"],
     "basePath": "/",
     "schemes": [
         "http", "https"
