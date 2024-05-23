@@ -5,7 +5,7 @@
         "description": "Description",
         "version": "1.0.0"
     },
-    "host": ["cse341-week4-s977.onrender.com"],
+    "host": ["cse341-week5-hbas.onrender.com"],
     "basePath": "/",
     "schemes": [
         "http", "https"
