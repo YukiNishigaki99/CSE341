@@ -1,41 +1,40 @@
 // -------------------------------------------------------------------
 // localhost
 // -------------------------------------------------------------------
-### Get all contacts
+### Get all diseases
 GET http://localhost:8080/diseases
-### Get contact by id
-GET http://localhost:8080/diseases/663f4657a663b702351c7c59
+### Get diseases by id
+GET http://localhost:8080/diseases/664f689b0524a3d9677883b9
 
-### Create contact
+### Create disease
 POST http://localhost:8080/diseases HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Schizophrenia, Childhood",
-    "symptoms": "Delusions, hallucinations or disorganized speech",
-    "whenToSeeDoctor": "Seek medical care as soon as possible if you have concerns about your child's behavior or development",
-    "cause": "It's not known what causes childhood schizophrenia.",
-    "riskFactor": "Older age of the father",
-    "complication": "Suicide, suicide attempts and thoughts of suicide",
-    "prevention": "Early identification and treatment"
+    "name": "Childhood asthma",
+    "symptoms1": "A whistling or wheezing sound when breathing out",
+    "whenToSeeDoctor": "Take your child to see a health care provider if you suspect that your child has asthma.",
+    "cause": "Childhood asthma causes aren't fully understood.",
+    "riskFactor": "Previous allergic reactions, including skin reactions, food allergies or hay fever, also called allergic rhinitis.",
+    "complication": "Permanent decline in lung function.",
+    "prevention": "Limit exposure to asthma triggers."
 }
-### PUT contact
-PUT http://localhost:8080/diseases/6635dc05f272633544532b43 HTTP/1.1
+### PUT disease
+PUT http://localhost:8080/diseases/664f69210524a3d9677883bc HTTP/1.1
 content-type:application/json
 
 {
-    "name": "Schizophrenia, Childhood",
-    "symptoms": "Delusions, hallucinations or disorganized speech",
-    "whenToSeeDoctor": "Seek medical care as soon as possible if you have concerns about your child's behavior or development",
-    "cause": "It's not known what causes childhood schizophrenia.",
-    "riskFactor": "Older age of the father",
-    "complication": "Suicide, suicide attempts and thoughts of suicide",
-    "prevention": "Early identification and treatment"
+    "name": "tetanus",
+    "symptoms": "Painful muscle spasms and stiff, immovable muscles (muscle rigidity) in your jaw",
+    "whenToSeeDoctor": "Tetanus is a life-threatening disease. If you have signs or symptoms of tetanus, seek emergency care.",
+    "cause": "The bacterium that causes tetanus is called Clostridium tetani. The bacterium can survive in a dormant state in soil and animal feces. It's essentially shut down until it discovers a place to thrive.",
+    "riskFactor": "The greatest risk factor for tetanus infection is not being vaccinated or not keeping up with the 10-year booster shots.",
+    "complication": "Breathing problems",
+    "prevention": "You can prevent tetanus by being vaccinated."
 }
-### DELETE contact
-DELETE http://localhost:8080/diseases/663f3ad09b5e58835ed22d6a
+### DELETE disease
+DELETE http://localhost:8080/diseases/664f69210524a3d9677883bc
 
-https://cse341-week5-hbas.onrender.com/diseases
 
 // -------------------------------------------------------------------
 // Render
@@ -43,33 +42,33 @@ https://cse341-week5-hbas.onrender.com/diseases
 ###
 GET https://cse341-week5-hbas.onrender.com/diseases
 ###
-GET https://cse341-week5-hbas.onrender.com/diseases
+GET https://cse341-week5-hbas.onrender.com/diseases/664f689b0524a3d9677883b9
 
-### Create contact
+### Create disease
 POST https://cse341-week5-hbas.onrender.com/diseases HTTP/1.1
 content-type: application/json
 
 {
-    "name": "name",
-    "symptoms": "symptoms",
-    "whenToSeeDoctor": "whenToSeeDoctor",
-    "cause": "cause",
-    "riskFactor": "riskFactor",
-    "complication": "complication",
-    "prevention": "prevention"
+    "name": "Childhood asthma",
+    "symptoms1": "A whistling or wheezing sound when breathing out",
+    "whenToSeeDoctor": "Take your child to see a health care provider if you suspect that your child has asthma.",
+    "cause": "Childhood asthma causes aren't fully understood.",
+    "riskFactor": "Previous allergic reactions, including skin reactions, food allergies or hay fever, also called allergic rhinitis.",
+    "complication": "Permanent decline in lung function.",
+    "prevention": "Limit exposure to asthma triggers."
 }
-### PUT contact
+### PUT disease
 PUT http://cse341-week3.onrender.com/diseases/663f3d0d253a1b638c24ec87 HTTP/1.1
 content-type:application/json
 
 {
-    "name": "Schizophrenia, Childhood",
-    "symptoms": "Delusions, hallucinations or disorganized speech",
-    "whenToSeeDoctor": "Seek medical care as soon as possible if you have concerns about your child's behavior or development",
-    "cause": "It's not known what causes childhood schizophrenia.",
-    "riskFactor": "Older age of the father",
-    "complication": "Suicide, suicide attempts and thoughts of suicide",
-    "prevention": "Early identification and treatment"
+    "name": "tetanus",
+    "symptoms": "Painful muscle spasms and stiff, immovable muscles (muscle rigidity) in your jaw",
+    "whenToSeeDoctor": "Tetanus is a life-threatening disease. If you have signs or symptoms of tetanus, seek emergency care.",
+    "cause": "The bacterium that causes tetanus is called Clostridium tetani. The bacterium can survive in a dormant state in soil and animal feces. It's essentially shut down until it discovers a place to thrive.",
+    "riskFactor": "The greatest risk factor for tetanus infection is not being vaccinated or not keeping up with the 10-year booster shots.",
+    "complication": "Breathing problems",
+    "prevention": "You can prevent tetanus by being vaccinated."
 }
-### DELETE contact
+### DELETE disease
 DELETE http://cse341-week3.onrender.com/diseases/663f39cd9b5e58835ed22d69
