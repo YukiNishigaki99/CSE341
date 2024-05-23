@@ -5,13 +5,25 @@
         "description": "Description",
         "version": "1.0.0"
     },
-    "host": ["cse341-week5-hbas.onrender.com"],
+    "host": [
+        "cse341-week5-hbas.onrender.com"
+    ],
     "basePath": "/",
     "schemes": [
         "http", "https"
     ],
     "paths": {
-        "/contacts/": {
+        "/api-docs": {
+            "get": {
+                "description": "",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/diseases/": {
             "get": {
                 "description": "",
                 "produces": [
@@ -31,19 +43,25 @@
                     "schema": {
                         "type": "object",
                         "properties": {
-                            "firstName": {
+                            "name": {
                                 "example": "any"
                             },
-                            "lastName": {
+                            "symptoms": {
                                 "example": "any"
                             },
-                            "email": {
+                            "whenToSeeDoctor": {
                                 "example": "any"
                             },
-                            "favoriteColor": {
+                            "cause": {
                                 "example": "any"
                             },
-                            "birthday": {
+                            "riskFactor": {
+                                "example": "any"
+                            },
+                            "complication": {
+                                "example": "any"
+                            },
+                            "prevention": {
                                 "example": "any"
                             }
                         }
@@ -59,7 +77,7 @@
                 }
             }
         },
-        "/contacts/{id}": {
+        "/diseases/{id}": {
             "get": {
                 "description": "",
                 "produces": [
@@ -91,19 +109,25 @@
                         "schema": {
                             "type": "object",
                             "properties": {
-                                "firstName": {
+                                "name": {
                                     "example": "any"
                                 },
-                                "lastName": {
+                                "symptoms": {
                                     "example": "any"
                                 },
-                                "email": {
+                                "whenToSeeDoctor": {
                                     "example": "any"
                                 },
-                                "favoriteColor": {
+                                "cause": {
                                     "example": "any"
                                 },
-                                "birthday": {
+                                "riskFactor": {
+                                    "example": "any"
+                                },
+                                "complication": {
+                                    "example": "any"
+                                },
+                                "prevention": {
                                     "example": "any"
                                 }
                             }

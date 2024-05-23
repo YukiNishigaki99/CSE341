@@ -5,13 +5,25 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": [
+    "cse341-week5-hbas.onrender.com"
+  ],
   "basePath": "/",
   "schemes": [
-    "http", "https"
+    "http"
   ],
   "paths": {
-    "/contacts/": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/diseases/": {
       "get": {
         "description": "",
         "produces": [
@@ -25,30 +37,38 @@
       },
       "post": {
         "description": "",
-        "parameters": [{
-          "name": "body",
-          "in": "body",
-          "schema": {
-            "type": "object",
-            "properties": {
-              "firstName": {
-                "example": "any"
-              },
-              "lastName": {
-                "example": "any"
-              },
-              "email": {
-                "example": "any"
-              },
-              "favoriteColor": {
-                "example": "any"
-              },
-              "birthday": {
-                "example": "any"
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "symptoms": {
+                  "example": "any"
+                },
+                "whenToSeeDoctor": {
+                  "example": "any"
+                },
+                "cause": {
+                  "example": "any"
+                },
+                "riskFactor": {
+                  "example": "any"
+                },
+                "complication": {
+                  "example": "any"
+                },
+                "prevention": {
+                  "example": "any"
+                }
               }
             }
           }
-        }],
+        ],
         "responses": {
           "201": {
             "description": "Created"
@@ -59,18 +79,20 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "/diseases/{id}": {
       "get": {
         "description": "",
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "name": "id",
-          "in": "path",
-          "required": true,
-          "type": "string"
-        }],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -79,7 +101,8 @@
       },
       "put": {
         "description": "",
-        "parameters": [{
+        "parameters": [
+          {
             "name": "id",
             "in": "path",
             "required": true,
@@ -91,19 +114,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "name": {
                   "example": "any"
                 },
-                "lastName": {
+                "symptoms": {
                   "example": "any"
                 },
-                "email": {
+                "whenToSeeDoctor": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "cause": {
                   "example": "any"
                 },
-                "birthday": {
+                "riskFactor": {
+                  "example": "any"
+                },
+                "complication": {
+                  "example": "any"
+                },
+                "prevention": {
                   "example": "any"
                 }
               }
@@ -121,12 +150,14 @@
       },
       "delete": {
         "description": "",
-        "parameters": [{
-          "name": "id",
-          "in": "path",
-          "required": true,
-          "type": "string"
-        }],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
         "responses": {
           "204": {
             "description": "No Content"
