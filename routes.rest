@@ -50,7 +50,7 @@ content-type: application/json
 
 {
     "name": "Childhood asthma",
-    "symptoms1": "A whistling or wheezing sound when breathing out",
+    "symptoms": "A whistling or wheezing sound when breathing out",
     "whenToSeeDoctor": "Take your child to see a health care provider if you suspect that your child has asthma.",
     "cause": "Childhood asthma causes aren't fully understood.",
     "riskFactor": "Previous allergic reactions, including skin reactions, food allergies or hay fever, also called allergic rhinitis.",
@@ -58,7 +58,7 @@ content-type: application/json
     "prevention": "Limit exposure to asthma triggers."
 }
 ### PUT disease
-PUT http://cse341-week3.onrender.com/diseases/663f3d0d253a1b638c24ec87 HTTP/1.1
+PUT http://cse341-week5-hbas.onrender.com/diseases/663f3d0d253a1b638c24ec87 HTTP/1.1
 content-type:application/json
 
 {
@@ -71,4 +71,4 @@ content-type:application/json
     "prevention": "You can prevent tetanus by being vaccinated."
 }
 ### DELETE disease
-DELETE http://cse341-week3.onrender.com/diseases/663f39cd9b5e58835ed22d69
+DELETE http://cse341-week5-hbas.onrender.com/diseases/66520f4b1bafb2818e9c0e37
