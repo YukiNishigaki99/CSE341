@@ -71,4 +71,4 @@ content-type:application/json
     "prevention": "You can prevent tetanus by being vaccinated."
 }
 ### DELETE disease
-DELETE http://cse341-week5-hbas.onrender.com/diseases/66520f4b1bafb2818e9c0e37
+DELETE http://cse341-week5-hbas.onrender.com/diseases/665210c80a783b3093ca756c
