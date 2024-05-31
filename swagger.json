@@ -5,11 +5,9 @@
         "description": "Description",
         "version": "1.0.0"
     },
-    "host": ["cse341-week4-s977.onrender.com"],
+    "host": ["localhost:8080"],
     "basePath": "/",
-    "schemes": [
-        "http", "https"
-    ],
+    "schemes": ["http"],
     "paths": {
         "/contacts/": {
             "get": {
@@ -62,9 +60,7 @@
         "/contacts/{id}": {
             "get": {
                 "description": "",
-                "produces": [
-                    "application/json"
-                ],
+                "produces": ["application/json"],
                 "parameters": [{
                     "name": "id",
                     "in": "path",
