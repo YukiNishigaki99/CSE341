@@ -6,12 +6,10 @@
         "version": "1.0.0"
     },
     "host": [
-        "localhost:8080"
+        "cse341-week6-0ah1.onrender.com"
     ],
     "basePath": "/",
-    "schemes": [
-        "http"
-    ],
+    "schemes": ["http", "https"],
     "paths": {
         "/diseases/": {
             "get": {
