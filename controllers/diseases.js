@@ -53,7 +53,7 @@ const recordDisease = async (req, res) => {
         complication: req.body.complication,
         prevention: req.body.prevention
     };
-    const response = await mongodb.getDb().db().collection('disease').insertOne(disease);
+    const response = await mongodb.getDb().db().collection('diseases').insertOne(disease);
     if (response.acknowledged) {
         res.status(201).json(response);
     } else {
@@ -97,7 +97,7 @@ const deleteDisease = async (req, res) => {
         res.status(400).json('Must use a valid disease id to delete a disease.');
     }
     const diseaseId = new ObjectId(req.params.id);
-    const response = await mongodb.getDb().db().collection('diseases').remove({
+    const response = await mongodb.getDb().db().collection('diseases').deleteOne({
         _id: diseaseId
     }, true);
     console.log(response);

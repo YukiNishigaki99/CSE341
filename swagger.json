@@ -5,11 +5,15 @@
         "description": "Description",
         "version": "1.0.0"
     },
-    "host": ["localhost:8080"],
+    "host": [
+        "localhost:8080"
+    ],
     "basePath": "/",
-    "schemes": ["http"],
+    "schemes": [
+        "http"
+    ],
     "paths": {
-        "/contacts/": {
+        "/diseases/": {
             "get": {
                 "description": "",
                 "produces": [
@@ -18,6 +22,9 @@
                 "responses": {
                     "200": {
                         "description": "OK"
+                    },
+                    "400": {
+                        "description": "Bad Request"
                     }
                 }
             },
@@ -29,19 +36,25 @@
                     "schema": {
                         "type": "object",
                         "properties": {
-                            "firstName": {
+                            "name": {
                                 "example": "any"
                             },
-                            "lastName": {
+                            "symptoms": {
                                 "example": "any"
                             },
-                            "email": {
+                            "whenToSeeDoctor": {
                                 "example": "any"
                             },
-                            "favoriteColor": {
+                            "cause": {
                                 "example": "any"
                             },
-                            "birthday": {
+                            "riskFactor": {
+                                "example": "any"
+                            },
+                            "complication": {
+                                "example": "any"
+                            },
+                            "prevention": {
                                 "example": "any"
                             }
                         }
@@ -51,16 +64,21 @@
                     "201": {
                         "description": "Created"
                     },
+                    "412": {
+                        "description": "Precondition Failed"
+                    },
                     "500": {
                         "description": "Internal Server Error"
                     }
                 }
             }
         },
-        "/contacts/{id}": {
+        "/diseases/{id}": {
             "get": {
                 "description": "",
-                "produces": ["application/json"],
+                "produces": [
+                    "application/json"
+                ],
                 "parameters": [{
                     "name": "id",
                     "in": "path",
@@ -70,6 +88,9 @@
                 "responses": {
                     "200": {
                         "description": "OK"
+                    },
+                    "400": {
+                        "description": "Bad Request"
                     }
                 }
             },
@@ -87,19 +108,25 @@
                         "schema": {
                             "type": "object",
                             "properties": {
-                                "firstName": {
+                                "name": {
                                     "example": "any"
                                 },
-                                "lastName": {
+                                "symptoms": {
                                     "example": "any"
                                 },
-                                "email": {
+                                "whenToSeeDoctor": {
                                     "example": "any"
                                 },
-                                "favoriteColor": {
+                                "cause": {
                                     "example": "any"
                                 },
-                                "birthday": {
+                                "riskFactor": {
+                                    "example": "any"
+                                },
+                                "complication": {
+                                    "example": "any"
+                                },
+                                "prevention": {
                                     "example": "any"
                                 }
                             }
@@ -109,6 +136,12 @@
                 "responses": {
                     "204": {
                         "description": "No Content"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "412": {
+                        "description": "Precondition Failed"
                     },
                     "500": {
                         "description": "Internal Server Error"
@@ -126,6 +159,9 @@
                 "responses": {
                     "204": {
                         "description": "No Content"
+                    },
+                    "400": {
+                        "description": "Bad Request"
                     },
                     "500": {
                         "description": "Internal Server Error"

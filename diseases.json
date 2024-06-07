@@ -1,0 +1,38 @@
+{
+    "disease": {
+        "name": "Schizophrenia, Childhood",
+        "symptoms": "Delusions, hallucinations or disorganized speech",
+        "whenToSeeDoctor": "Seek medical care as soon as possible if you have concerns about your child's behavior or development",
+        "cause": "It's not known what causes childhood schizophrenia.",
+        "riskFactor": "Older age of the father",
+        "complication": "Suicide, suicide attempts and thoughts of suicide",
+        "prevention": "Early identification and treatment"
+    },
+    "disease2": {
+        "name": "Parvovirus infection",
+        "symptoms": "Most people with parvovirus infection have no signs or symptoms. When symptoms do appear, they vary greatly depending on how old you are when you get the disease.",
+        "whenToSeeDoctor": "Generally, you don't need to see a doctor for parvovirus infection. But if you or your child has an underlying condition that may increase the risk of complications, make an appointment with your doctor.",
+        "cause": "The human parvovirus B19 causes parvovirus infection.",
+        "riskFactor": "/",
+        "complication": "Parvovirus infection can cause serious complications for people with anemia.",
+        "prevention": "There's no vaccine to prevent human parvovirus infection. Once you've become infected with parvovirus, you get lifelong immunity. "
+    },
+    "disease3": {
+        "name": "Childhood asthma",
+        "symptoms1": "A whistling or wheezing sound when breathing out",
+        "whenToSeeDoctor": "Take your child to see a health care provider if you suspect that your child has asthma.",
+        "cause": "Childhood asthma causes aren't fully understood.",
+        "riskFactor": "Previous allergic reactions, including skin reactions, food allergies or hay fever, also called allergic rhinitis.",
+        "complication": "Permanent decline in lung function.",
+        "prevention": "Limit exposure to asthma triggers."
+    },
+    "disease4": {
+        "name": "tetanus",
+        "symptoms": "Painful muscle spasms and stiff, immovable muscles (muscle rigidity) in your jaw",
+        "whenToSeeDoctor": "Tetanus is a life-threatening disease. If you have signs or symptoms of tetanus, seek emergency care.",
+        "cause": "The bacterium that causes tetanus is called Clostridium tetani. The bacterium can survive in a dormant state in soil and animal feces. It's essentially shut down until it discovers a place to thrive.",
+        "riskFactor": "The greatest risk factor for tetanus infection is not being vaccinated or not keeping up with the 10-year booster shots.",
+        "complication": "Breathing problems",
+        "prevention": "You can prevent tetanus by being vaccinated."
+    }
+}
