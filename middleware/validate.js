@@ -1,12 +1,14 @@
 const validator = require('../helpers/validate');
 
-const saveContact = (req, res, next) => {
+const saveDisease = (req, res, next) => {
     const validationRule = {
-        firstName: 'required|string',
-        lastName: 'required|string',
-        email: 'required|email',
-        favoriteColor: 'required|string',
-        birthday: 'string'
+        name: 'required|string',
+        symptoms: 'required|string',
+        whenToSeeDoctor: 'required|string',
+        cause: 'required|string',
+        riskFactor: 'required|string',
+        complication: 'required|string',
+        prevention: 'required|string'
     };
     validator(req.body, validationRule, {}, (err, status) => {
         if (!status) {
@@ -22,5 +24,5 @@ const saveContact = (req, res, next) => {
 };
 
 module.exports = {
-    saveContact
+    saveDisease
 };
